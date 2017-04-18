@@ -1,0 +1,3 @@
+include ':base_module', ':application', ':netbase'
+include ':droidplugin'
+project(':droidplugin').projectDir= new File(settingsDir, '../leigits/DroidPlugin/project/Libraries/DroidPlugin')
