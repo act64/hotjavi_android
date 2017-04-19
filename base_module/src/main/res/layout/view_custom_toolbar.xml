@@ -25,9 +25,9 @@
         android:src="@drawable/ic_arrow_back"
         android:scaleType="fitCenter"
         android:paddingRight="40dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -40,12 +40,18 @@
         android:id="@+id/title_rl_right"
         >
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp" 
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            tools:background="@color/app.red"
             tools:src="@drawable/ic_arrow_back"
+            android:scaleType="fitCenter"
+            android:paddingRight="5dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
             android:id="@+id/iv_right"
             />
         <TextView
