@@ -1,11 +1,13 @@
 package hotjavi.lei.com.base_module.activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 
 import hotjavi.lei.com.base_module.R;
@@ -25,6 +27,7 @@ public class BaseSetMainActivity extends BaseTopActivity {
         customToolBar= (CustomToolBar) findViewById(R.id.custom_titletoolbar);
         mainContent= (FrameLayout) findViewById(R.id.content_main);
         iniBackVisable();
+        mainContent.requestFocus();
 
     }
 
