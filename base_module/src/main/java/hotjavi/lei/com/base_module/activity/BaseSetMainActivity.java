@@ -39,6 +39,11 @@ public class BaseSetMainActivity extends BaseTopActivity {
         return customToolBar;
     }
 
+    @Override
+    public void setTitle(CharSequence title) {
+        getCustomToolBar().setTitle(title);
+    }
+
     protected void iniBackVisable(){
         getCustomToolBar().setBackVisble(true, new View.OnClickListener() {
             @Override
