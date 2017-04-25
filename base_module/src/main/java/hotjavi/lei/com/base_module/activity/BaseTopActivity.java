@@ -30,11 +30,14 @@ public class BaseTopActivity extends FragmentActivity {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             View view = getCurrentFocus();
             if (isHideInput(view, ev)) {
+                changeFocus();
                 HideSoftInput(view.getWindowToken());
             }
         }
         return super.dispatchTouchEvent(ev);
     }
+
+    protected void  changeFocus(){}
     // 判定是否需要隐藏
     private boolean isHideInput(View v, MotionEvent ev) {
         if (v != null && (v instanceof EditText)) {

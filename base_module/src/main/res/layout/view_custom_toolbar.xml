@@ -16,6 +16,7 @@
         android:theme="@style/title_text_style"
         tools:text="标题232"
         android:id="@+id/tv_title"
+        android:textColor="@color/white"
         />
     <ImageView
         android:id="@+id/iv_back"
@@ -61,6 +62,7 @@
             tools:text="abc"
             android:id="@+id/tv_right"
             android:theme="@style/title_text_right_style"
+            android:textColor="@color/white"
             />
     </RelativeLayout>
 </RelativeLayout>

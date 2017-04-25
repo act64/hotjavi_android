@@ -110,6 +110,13 @@ public class CustomToolBar extends Toolbar {
     public void setRightClick(OnClickListener onClickListener){
         rlRight.setOnClickListener(onClickListener);
     }
+    /**
+     * set OnclickListener for left area
+     * @param onClickListener
+     */
+    public void setLeftClick(OnClickListener onClickListener){
+        ivLeft.setOnClickListener(onClickListener);
+    }
 
     /**
      * set right text and make right icon gone
@@ -129,6 +136,10 @@ public class CustomToolBar extends Toolbar {
         ivRight.setImageResource(resId);
         tvRight.setVisibility(GONE);
         ivRight.setVisibility(VISIBLE);
+    }
+
+    public void setLeftView(@DrawableRes int resId){
+        ivLeft.setImageResource(resId);
     }
 
     public View getRlRight() {
